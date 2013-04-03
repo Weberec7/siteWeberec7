@@ -1,0 +1,368 @@
+/* CSS Document */
+/*
+quick swap
+
+/*headlinefont/ Philosopher, sans-serif
+/*background/
+/*bodyfont/ Habibi, serif;	
+
+*/
+
+/* ensures html5 elements are displayed as block instead of the default inline */
+article, aside, figure, footer, header, hgroup, nav, section
+{
+	display:block;
+}
+
+/* changes selection highlight color */
+::-moz-selection
+{
+	background:#484848;
+	color:#fff;
+}
+
+::selection
+{
+	background:#484848;
+	color:#fff;
+}
+
+/* various header fonts */
+h1
+{
+	color: #555555;
+	text-align:center;
+	margin: 0px 0px 0px;
+	padding: 30px 0px 0px 0px;
+	font: 70px /*headlinefont*/ Philosopher, sans-serif;
+	/*border-bottom: 1px dashed #E6E8ED; */
+}
+
+h2
+{
+  	text-align:center;
+  	padding: 0px 5px 0px;
+  	color: #B5B5B5;
+  	font: 30px /*headlinefont*/ Philosopher, sans-serif;
+	margin-top: 0px;
+}
+
+
+
+h3
+{
+	margin-bottom: 10px;
+  	text-align:center;
+  	padding: 0px 5px 0px;
+  	color: #000000;
+  	font: 30px /*headlinefont*/ Philosopher, sans-serif;
+}
+h4
+{
+	margin-top: 0px;
+  	text-align:center;
+  	padding: 0px 5px 0px;
+  	color: #555555;
+  	font: 20px /*headlinefont*/ Philosopher, sans-serif;
+}
+
+a
+{
+	color: #333333;
+  	font: 14px /*bodyfont*/ Habibi, serif;	
+}
+
+p
+{
+	text-align:left;
+  	padding: 0px 10% 0px;
+  	color: #333333;
+  	font: 16px /*bodyfont*/ Habibi, serif;	
+}
+
+ul.mobile
+{
+	text-align:left;
+  	padding: 0px 10% 0px;
+  	color: #333333;
+  	font: 16px /*bodyfont*/ Habibi, serif;	
+	margin-left: 3.0em;
+}
+
+/* fixed background image and color */
+body
+{
+	margin: 0px;
+	background-image:url('/myimg/Background.jpg');
+	background-attachment:fixed;
+	background-color:#0a0a0a;
+	background-repeat:repeat-x;
+	background-position: center;
+}
+
+#Home
+{
+	background-image:url('/myimg/Background.jpg');
+}
+
+#Projects
+{
+	background-image:url('/myimg/Backgroundblue.jpg');
+
+}
+
+#Bio
+{
+	background-image:url('/myimg/Backgroundred.jpg');
+}
+
+#Resume
+{
+	background-image:url('/myimg/Backgroundpurple.jpg');
+}
+
+#PhotoBlog
+{
+	background-image:url('/myimg/Backgroundgreen.jpg');
+}
+
+#Contact
+{
+	background-image:url('/myimg/Backgroundyellow.jpg');
+}
+
+/* nav bar background */
+nav
+{
+	height: 50px;
+	background: #ccc;
+	border: 2px solid #0a0a0a;
+	border-left: 0px;
+	border-right: 0px;
+}
+
+/* puts lists items in a line instead of column */
+nav li
+{
+	float: left;
+	list-style-type:none;
+}
+
+/* centering for nav ul element */
+nav ul
+{
+	margin-left: auto;
+	margin-right: auto;
+	display: table;
+	padding: 0px 5px 0px;
+}
+
+/* styling for text in nav a*/
+nav a
+{
+	text-decoration:none;
+	/*text-transform:uppercase;*/
+	color: #2D3954;
+	padding: .5em .6em;
+	font: normal normal 16px /*headlinefont*/ Philosopher, sans-serif;
+	margin-left: .07em;
+	margin-right: .07em;
+}
+
+/* hover styling for text in nav a */
+nav a:hover
+{
+	color: #ffffff;
+	text-shadow: 1px 1px 5px #000;
+}
+
+/* creates center column white page */
+section
+{
+	position: relative;
+	width: 1100px;
+	background-color: #fff;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 20px; 
+}
+
+#Home img
+{
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	width: 90%;
+  	border-width: 2px;
+  	border-style:solid;
+  	border-color:#555555;
+	margin-bottom: 200px;
+	margin-top: 50px;
+}
+
+/* unique settings for the project page images */
+#Projects img, #PhotoBlog img
+{
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	width: 90%;
+  	border-width: 2px;
+  	border-style:solid;
+  	border-color:#555555;
+	margin-bottom: 50px;
+}
+
+/* removes bullets from all list items */
+li
+{
+
+}
+
+/* iframe (embedded webpage settings */  
+iframe
+{
+	display: block;
+	width: 90%;
+	height: 1100px;
+	position: relative;
+	border: 2px solid #333333;
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+iframe.youtube
+{
+	width: 560px;
+	height: 315px;
+	margin-bottom: 50px;
+}
+
+/* error document format */
+section.error
+{
+	width:auto;
+	padding-left: 10px;
+	padding-bottom: 700px;
+	padding-top: 25px;
+	font: bold 40px sanserif;
+}
+
+/* creates foundation for the Project List */
+aside.tabs
+{
+	position: fixed;
+	top: 263px;
+	padding-left: 15px;
+	width: 100px;	
+}
+
+/* styling for Project List Buttons */
+aside.tabs button
+{
+	font: 15px /*headlinefont*/ Philosopher, sans-serif;
+	width: 150px;
+	display: block;
+	padding: 10px 10px 5px 5px;
+}
+
+/* styling and offset for Project List */
+.fixed
+{
+	background-color: #666;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	-moz-border-top-left-radius: 10px;
+	-moz-border-bottom-left-radius: 10px;
+	padding: 5px;
+	border: 1px solid #ccc;
+	position: absolute;
+	margin-left: -154%;
+}
+
+/* styling for Project list header */
+#projectbar
+{
+	padding-bottom: 10px;
+	display: block;
+	color: #fff;
+	font: 20px /*headlinefont*/ Philosopher, sans-serif;
+	text-align: center;
+	
+}
+
+#main section
+{
+	width: 100%;
+}
+
+
+#main
+{
+	padding-bottom: 0px;
+}
+
+
+footer, footer p
+{
+	background-color: #0a0a0a;
+	height: 50px;
+	color: #f0f0f0;
+	padding-top: 2px;
+	padding-right: 2px;
+	text-align: right;
+}
+
+#bioimg
+{
+	margin-left: 7%;
+	margin-bottom: 2.0em;
+	width: 30%;
+	display: inline;
+	border-width: 2px;
+  	border-style:solid;
+  	border-color:#555555;
+}
+
+#contactimg
+{
+	margin-bottom: 2.0em;
+	width: 30%;
+	display: inline;
+	border-width: 2px;
+  	border-style:solid;
+  	border-color:#555555;
+}
+
+#biosection
+{
+	float: right;
+	width: 50%;
+	padding-right: 10%;
+	padding-left: 0px;
+}
+
+.contactsection
+{
+	float: left;
+	width: 50%;
+	padding-left: 10%;
+	padding-right: 0px;
+  	color: #333333;
+	margin-top: 0px;
+  	font: 16px /*bodyfont*/ Habibi, serif;
+}
+ul.contactsection
+{
+	margin-left: 3.0em;
+	margin-top: -.3em;
+}
+
+.contactli
+{
+	float: left;
+	width: 80%;
+	padding-left: 1%;
+	padding-right: 0px;
+}
